@@ -20,3 +20,7 @@ choices.forEach((choice) => {
     playGame(userChoice);
   });
 });
+
+function drawGame() {
+  console.log("Game Draw!!");
+}
