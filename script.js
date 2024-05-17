@@ -4,6 +4,8 @@ let compScore = 0;
 let choices = document.querySelectorAll(".choice");
 const playGame = (userChoice) => {
   console.log("choice clicked", userChoice);
+  const compChoice = generateComputerChoice();
+  console.log(compChoice);
 };
 
 const generateComputerChoice = () => {
