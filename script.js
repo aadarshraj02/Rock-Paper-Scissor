@@ -19,7 +19,7 @@ const playGame = (userChoice) => {
     } else {
       userWin = compChoice === "rock" ? false : true;
     }
-    showWinner();
+    showWinner(userWin);
   }
 };
 
@@ -40,10 +40,10 @@ function drawGame() {
   console.log("Game Draw!!");
 }
 
-function showWinner(userWin) {
+const showWinner = (userWin) => {
   if (userWin) {
-    console.log("You Win");
+    console.log("Win");
   } else {
-    console.log("You Loose");
+    console.log("Looser");
   }
-}
+};
