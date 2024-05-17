@@ -19,6 +19,7 @@ const playGame = (userChoice) => {
     } else {
       userWin = compChoice === "rock" ? false : true;
     }
+    showWinner();
   }
 };
 
@@ -37,4 +38,12 @@ choices.forEach((choice) => {
 
 function drawGame() {
   console.log("Game Draw!!");
+}
+
+function showWinner(userWin) {
+  if (userWin) {
+    console.log("You Win");
+  } else {
+    console.log("You Loose");
+  }
 }
