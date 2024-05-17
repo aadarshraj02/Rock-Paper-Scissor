@@ -11,10 +11,11 @@ h1{
     line-height: 5rem;
 }
 .choice{
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
 }
 img{
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
 }
