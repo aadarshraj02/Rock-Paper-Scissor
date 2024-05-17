@@ -1,6 +1,7 @@
 let userScore = 0;
 let compScore = 0;
 
+const msg = document.querySelector("#msg");
 let choices = document.querySelectorAll(".choice");
 
 const playGame = (userChoice) => {
