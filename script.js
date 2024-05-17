@@ -1,10 +1,8 @@
 let userScore = 0;
 let compScore = 0;
 
-let choices = document.querySelectorAll('.choice');
+let choices = document.querySelectorAll(".choice");
 
-choices.forEach((choice)=>{
-    choice.addEventListener('click',()=>{
-
-    })
-})
+choices.forEach((choice) => {
+  choice.addEventListener("click", () => {});
+});
