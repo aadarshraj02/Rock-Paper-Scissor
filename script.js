@@ -40,14 +40,17 @@ choices.forEach((choice) => {
 function drawGame() {
   console.log("Game Draw!!");
   msg.innerHTML = "Game Draw!! Play Again";
+  msg.style.backgroundColor = "Purple";
 }
 
 const showWinner = (userWin) => {
   if (userWin) {
     console.log("Win");
     msg.innerHTML = "You Win!!";
+    msg.style.backgroundColor = "green";
   } else {
     console.log("Looser");
     msg.innerHTML = "You Loose!!";
+    msg.style.backgroundColor = "red";
   }
 };
