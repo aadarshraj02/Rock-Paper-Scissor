@@ -8,6 +8,8 @@ const playGame = (userChoice) => {
 
 const generateComputerChoice = () => {
   let options = ["rock", "paper", "scissors"];
+  const randomIndex = Math.floor(Math.random() * 3);
+  return options[randomIndex];
 };
 
 choices.forEach((choice) => {
