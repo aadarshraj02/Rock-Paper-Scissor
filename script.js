@@ -49,11 +49,14 @@ function drawGame() {
 const showWinner = (userWin, userChoice, compChoice) => {
   if (userWin) {
     userScore++;
+    userScorePara.innerHTML = userScore;
     console.log("Win");
     msg.innerHTML = `You Win! Your ${userChoice} beats ${compChoice}`;
     msg.style.backgroundColor = "green";
   } else {
     console.log("Looser");
+    compScore++;
+    compScorePara.innerHTML = compScore;
     msg.innerHTML = `You Loose. ${compChoice} beats your ${userChoice}`;
     msg.style.backgroundColor = "red";
   }
