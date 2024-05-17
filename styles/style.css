@@ -2,8 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 h1{
     background-color: #5A716A;
-    
+    color: #6af1c9;
+    height: 5rem;
+    line-height: 5rem;
 }
