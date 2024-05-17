@@ -10,6 +10,11 @@ const playGame = (userChoice) => {
 
   if (userChoice === compChoice) {
     drawGame();
+  } else {
+    let userWin = true;
+    if (userChoice === "rock") {
+      userWin = compChoice === "paper" ? false : true;
+    }
   }
 };
 
