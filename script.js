@@ -8,9 +8,7 @@ const userScorePara = document.querySelector("#user-score");
 const compScorePara = document.querySelector("#comp-score");
 
 const playGame = (userChoice) => {
-  console.log("choice clicked", userChoice);
   const compChoice = generateComputerChoice();
-  console.log(compChoice);
 
   if (userChoice === compChoice) {
     drawGame();
@@ -41,7 +39,6 @@ choices.forEach((choice) => {
 });
 
 function drawGame() {
-  console.log("Game Draw!!");
   msg.innerHTML = "Game Draw!! Play Again";
   msg.style.backgroundColor = "Purple";
 }
@@ -50,11 +47,9 @@ const showWinner = (userWin, userChoice, compChoice) => {
   if (userWin) {
     userScore++;
     userScorePara.innerHTML = userScore;
-    console.log("Win");
     msg.innerHTML = `You Win! Your ${userChoice} beats ${compChoice}`;
     msg.style.backgroundColor = "green";
   } else {
-    console.log("Looser");
     compScore++;
     compScorePara.innerHTML = compScore;
     msg.innerHTML = `You Loose. ${compChoice} beats your ${userChoice}`;
