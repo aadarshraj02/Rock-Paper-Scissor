@@ -39,12 +39,15 @@ choices.forEach((choice) => {
 
 function drawGame() {
   console.log("Game Draw!!");
+  msg.innerHTML = "Game Draw!! Play Again";
 }
 
 const showWinner = (userWin) => {
   if (userWin) {
     console.log("Win");
+    msg.innerHTML = "You Win!!";
   } else {
     console.log("Looser");
+    msg.innerHTML = "You Loose!!";
   }
 };
