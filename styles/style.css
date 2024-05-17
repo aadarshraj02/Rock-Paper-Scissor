@@ -13,7 +13,14 @@ h1{
 .choice{
     height: 165px;
     width: 165px;
+    border-radius: 50%;
 }
+.choice:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    background-color: #5A716A;
+}
+
 img{
     height: 150px;
     width: 150px;
